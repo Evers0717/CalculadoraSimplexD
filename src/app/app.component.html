@@ -23,19 +23,16 @@
             name="number2"
           />
           <app-button
-            [operation]="'addition'"
             (operate)="sumUp()"
             [fashion]="'bg-green-800 rounded-full p-2 m-3'"
             [logo]="'M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'"
           ></app-button>
           <app-button
-            [operation]="'addition'"
             (operate)="minusDown()"
             [fashion]="'bg-red-800 rounded-full p-2 m-3'"
             [logo]="'M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'"
           ></app-button>
           <app-button
-            [operation]="'addition'"
             (operate)="Multiply()"
             [fashion]="'bg-yellow-800 rounded-full p-2 m-3'"
             [logo]="
@@ -43,7 +40,6 @@
             "
           ></app-button>
           <app-button
-            [operation]="'addition'"
             (operate)="Divide()"
             [fashion]="'bg-cyan-800 rounded-full p-2 m-3'"
             [logo]="

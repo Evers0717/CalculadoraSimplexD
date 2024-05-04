@@ -10,14 +10,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ButtonComponent {
   @Input() fashion: string = '';
   @Input() logo: string = '';
-  @Input()
-  operation!: 'addition' | 'minus' | 'divide' | 'multiply';
-
-  @Output() operate = new EventEmitter<
-    'addition' | 'minus' | 'divide' | 'multiply'
-  >();
+  @Output() operate = new EventEmitter<''>();
 
   onButtonClick(): void {
-    this.operate.emit(this.operation);
+    this.operate.emit();
   }
 }
